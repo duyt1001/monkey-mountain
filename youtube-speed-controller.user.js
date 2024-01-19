@@ -53,6 +53,9 @@
 			var s = i.value;
 			setRate(s);
 		};
+		i.ondblclick = function () {
+			i.value = getRate();
+		};
 
 		//make the standard speed controls change the new speed controller
 		document.getElementsByTagName('video')[0].onratechange = function () {
