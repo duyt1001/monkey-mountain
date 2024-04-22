@@ -23,7 +23,7 @@ setInterval(() => {
 
 const removeAds = () => {
 	// Get skip button and click it
-	let btn = document.getElementsByClassName("ytp-ad-skip-button-modern ytp-button").item(0);
+	let btn = document.getElementsByClassName("ytp-skip-ad-button").item(0);
 	if (btn) {
 	    btn.click();
 	}
