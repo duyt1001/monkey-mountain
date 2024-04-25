@@ -25,7 +25,12 @@ const removeAds = () => {
 	// Get skip button and click it
 	let btn = document.getElementsByClassName("ytp-skip-ad-button").item(0);
 	if (btn) {
-	    btn.click();
+		btn.click();
+	} else {
+		btn = document.getElementsByClassName("ytp-ad-skip-button-modern ytp-button").item(0);
+		if (btn) {
+			btn.click();
+		}
 	}
 
 	// (unskipable ads) If skip button didn't exist / was not clicked speed up video
