@@ -69,6 +69,13 @@
 		if (event.ctrlKey && event.keyCode == 192) {
 			return confirm('Activate Absolute Right Click Mode!') == true ? absoluteMode() : null;
 		}
+
+		if (event.metaKey && event.keyCode === 90) { // Cmd+Z on macOS
+            event.preventDefault();
+            document.execCommand('selectAll'); // Select all content
+            document.execCommand('copy');      // Copy selected content
+            window.getSelection().removeAllRanges(); // Clear selection
+        }
 	}
 
 	function absoluteMode() {
