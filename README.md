@@ -1,3 +1,5 @@
+本目录中的脚本都是为tampermonkey编写的。
+
 # monkey-mountain
 A bunch of monkey scripts
 
